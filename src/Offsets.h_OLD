@@ -1,0 +1,74 @@
+//
+// Created by alex on 14.06.19.
+//
+/*
+ * see https://github.com/ARNFRIED/TrampolineDetours
+ *
+ */
+
+#ifndef WOWCPP_OFFSETS_H
+#define WOWCPP_OFFSETS_H
+
+#include <iostream>
+
+//WOW Objectmanager offset list:
+
+uint32_t WOW_OBJECT_TABLE_PTR = 0x00D43318;
+uint32_t OBJ_TABLE_OBJMGR_OFFSET = 0x2218;
+uint32_t OBJMGR_LP_GUID_OFFSET = 0xC0;
+uint32_t OBJMGR_FIRST_OBJ = 0xAC;
+
+//WOWObject offset list:
+uint32_t WOWOBJ_DESCRIPTOR_OFFSET = 0x8;
+uint32_t WOWOBJ_TYPE_OFFSET = 0x14;
+uint32_t WOWOBJ_GUID_OFFSET = 0x30;
+uint32_t WOWOBJ_NEXT_OBJ_OFFSET = 0x3C;
+uint32_t WOWOBJ_LOCATION_OFFSET = 0xBF0;
+
+
+enum WOWObjectType : uint32_t {
+    Object = 0,
+    Item = 1,
+    Container = 2,
+    Unit = 3,
+    Player = 4,
+    GameObject = 5,
+    DynamicObject = 6,
+    Corpse = 7,
+    AiGroup = 8,
+    AreaTrigger = 9,
+    ListEnd = 205,
+};
+
+//WOWUnit offset list:
+
+uint32_t WOWUNIT_NAME_OFFSET_1 = 0xdb8;
+uint32_t WOWUNIT_NAME_OFFSET_2 = 0x40;
+uint32_t WOWUNIT_HP_OFFSET = 0x70;
+uint32_t WOWUNIT_LEVEL_OFFSET = 0x88;
+
+// Camera
+
+uint32_t CAM_OFFSET  = 0x732c;
+uint32_t CAM_ADDRESS = 0x00c6eccc;
+
+// Other offsets
+
+uint32_t VIDEO_RESOLUTION_WIDTH_ADDR = 0x00D6938C;
+uint32_t VIDEO_RESOLUTION_HEIGHT_ADDR = 0x00D6938C + 0x4;
+
+uint32_t WINDOW_WIDTH_OFFSET = 0x00E17FB8;
+uint32_t WINDOW_HEIGHT_OFFSET = 0x00E17FB8 + 0x4;
+
+uint32_t TARGET_GUID_FUNC = 0x004a46a0;
+uint32_t LUA_TO_STRING_FUNX = 0x00706C80;
+
+uint32_t SCREEN_STATUS_TEXT_PTR = 0x00C07CD0;
+uint32_t LOGIN_FUNC_PTR = 0x0046E560; //__cdecl (char* user,char*pass)
+
+uint32_t GET_CAM_OFFSET_FUNC = 0x004ab5b0;
+uint32_t MAINLOOP_FUNC2 = 0x00428770; //0x000000000042b42b
+uint32_t MAINLOOP_FUNC = 0x00428810;
+
+
+#endif //WOWCPP_OFFSETS_H
