@@ -1,7 +1,15 @@
 # EzWow
 
 
-special thanks to ownedcore.com community!
+special thanks to [ownedcore](https://www.ownedcore.com) community!
+
+
+this project uses
+* shared object injection via LD_PRELOAD 
+* opengls GlxSwapBuffer hook to draw imgui ingame menu.
+
+
+[![unknown.png](https://i.postimg.cc/zvRW54qM/unknown.png)](https://postimg.cc/YLMjznGf)
 
 
 ## set up
