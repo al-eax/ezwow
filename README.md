@@ -12,7 +12,7 @@ this project uses
 [![unknown.png](https://i.postimg.cc/zvRW54qM/unknown.png)](https://postimg.cc/YLMjznGf)
 
 
-## set up
+## prepare
 
 ```sh
 # install wine
@@ -62,7 +62,7 @@ editor inject_debug_via_ldpreload.sh
 ./inject_debug_via_ldpreload
 ```
 
-## third party
+## third party stuff
 
 * subhook
 * imgui
