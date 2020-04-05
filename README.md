@@ -8,6 +8,12 @@ this project uses
 * shared object injection via LD_PRELOAD 
 * opengls GlxSwapBuffer hook to draw imgui ingame menu [ref](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/330135-linux-ld_preload-injection-without-patching-wine.html)
 
+__third party stuff__
+
+* [subhook](https://github.com/Zeex/subhook)
+* [imgui](https://github.com/ocornut/imgui)
+
+
 
 [![unknown.png](https://i.postimg.cc/zvRW54qM/unknown.png)](https://postimg.cc/YLMjznGf)
 
@@ -61,8 +67,3 @@ editor inject_debug_via_ldpreload.sh
 # start Wow via winedbg and inject libezwow.so
 ./inject_debug_via_ldpreload
 ```
-
-## third party stuff
-
-* subhook
-* imgui
