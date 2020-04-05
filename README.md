@@ -6,7 +6,7 @@ special thanks to [ownedcore](https://www.ownedcore.com) community!
 
 this project uses
 * shared object injection via LD_PRELOAD 
-* opengls GlxSwapBuffer hook to draw imgui ingame menu.
+* opengls GlxSwapBuffer hook to draw imgui ingame menu [ref](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-bots-programs/wow-memory-editing/330135-linux-ld_preload-injection-without-patching-wine.html)
 
 
 [![unknown.png](https://i.postimg.cc/zvRW54qM/unknown.png)](https://postimg.cc/YLMjznGf)
