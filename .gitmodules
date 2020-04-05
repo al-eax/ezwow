@@ -1,0 +1,6 @@
+[submodule "src/third_party/imgui"]
+	path = src/third_party/imgui
+	url = git@github.com:ocornut/imgui.git
+[submodule "src/third_party/subhook"]
+	path = src/third_party/subhook
+	url = git@github.com:Zeex/subhook.git
